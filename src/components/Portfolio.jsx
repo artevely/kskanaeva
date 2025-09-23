@@ -6,10 +6,10 @@ export default function Portfolio() {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const videos = [
-    { id: 1, title: "Видео #1", src: "public/portfolio1.mp4", poster: "public/poster1.png" },
-    { id: 2, title: "Видео #2", src: "public/portfolio2.mp4", poster: "public/poster2.png" },
-    { id: 3, title: "Видео #3", src: "public/portfolio3.mp4", poster: "public/poster3.png" },
-    { id: 4, title: "Видео #4", src: "public/portfolio4.mp4", poster: "public/poster4.png" }
+    { id: 1, title: "Видео #1", src: "/portfolio1.mp4", poster: "/poster1.png" },
+    { id: 2, title: "Видео #2", src: "/portfolio2.mp4", poster: "/poster2.png" },
+    { id: 3, title: "Видео #3", src: "/portfolio3.mp4", poster: "/poster3.png" },
+    { id: 4, title: "Видео #4", src: "/portfolio4.mp4", poster: "/poster4.png" }
   ];
 
   useEffect(() => {
