@@ -11,7 +11,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover hidden md:block"
       >
-        <source src="/kskanaeva/hero-sm.mp4" type="video/mp4" />
+        <source src="/kskanaeva/hero.mp4" type="video/mp4" />
       </video>
 
       {/* Видео для мобилок */}
@@ -22,7 +22,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover block md:hidden"
       >
-        <source src="/kskanaeva/hero.mp4" type="video/mp4" />
+        <source src="/kskanaeva/hero-sm.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
