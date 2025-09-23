@@ -51,7 +51,7 @@ export default function Portfolio() {
   className="section-subtitle mt-8 inline-flex items-center justify-center gap-3 text-white hover:text-yellow-400 transition-colors"
 >
   <FaTelegramPlane className="text-2xl" />
-  Еще больше работ в моем канале
+  Еще больше работ в моем канале (жми)
 </a>
 
       {/* Lightbox */}
