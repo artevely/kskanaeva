@@ -13,12 +13,12 @@ export default function About() {
       />
 <div className="relative z-10 max-w-2xl p-6 opacity-70">
   <h3 className="section-heading-b mb-4 text-white">
-  About
+  Обо мне
 </h3>
 
   <p className="section-subtitle \text-lg leading-relaxed">
-    Я — видеограф, создающий эмоциональные и кинематографичные ролики.
-    Вдохновляюсь искусством кино и помогаю клиентам сохранить лучшие
+    Я — контент-мейкер, создающий эмоциональные, захватывающие 
+    и динамичные ролики. Помогаю клиентам сохранить лучшие
     моменты их жизни в стильных видео-историях.
   </p>
 </div>

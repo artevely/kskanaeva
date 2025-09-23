@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaTelegramPlane } from "react-icons/fa"; // иконка Telegram через react-icons
 
 export default function Portfolio() {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -27,7 +26,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-10 bg-black text-center relative z-1">
       <h3 className="section-heading-b mb-10 text-white">
-  Portfolio
+  Портфолио
 </h3>
 
       {/* Сетка видео */}
@@ -48,9 +47,9 @@ export default function Portfolio() {
   href="https://t.me/kanaevavideo"
   target="_blank"
   rel="noopener noreferrer"
-  className="section-subtitle mt-8 inline-flex items-center justify-center gap-3 text-white hover:text-yellow-400 transition-colors"
+  className="section-subtitle mt-8 inline-flex items-center justify-center gap-3 p-4 text-white hover:text-yellow-400 transition-colors"
 >
-  Еще больше работ в моем канале (жми)
+  Еще больше работ в канале (жми)
 </a>
 
       {/* Lightbox */}

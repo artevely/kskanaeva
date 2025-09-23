@@ -9,7 +9,7 @@ export default function Contacts() {
           href="https://t.me/kskanaeva"
           target="_blank"
           rel="noreferrer"
-          className="section-subtitle flex items-center gap-3 hover:text-gray-300 transition italic"
+          className="section-subtitle flex items-center gap-3 hover:text-gray-300 transition"
         >
           <FaTelegramPlane size={24} />
           tg: kskanaeva
@@ -18,7 +18,7 @@ export default function Contacts() {
           href="https://www.instagram.com/kskanaeva/"
           target="_blank"
           rel="noreferrer"
-          className="section-subtitle flex items-center gap-3 hover:text-gray-300 transition italic"
+          className="section-subtitle flex items-center gap-3 hover:text-gray-300 transition"
         >
           <FaInstagram size={24} />
           inst: kskanaeva

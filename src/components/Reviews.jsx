@@ -30,7 +30,7 @@ export default function Reviews() {
 
   return (
     <section id="reviews" className="py-20 bg-gray-950 text-center relative">
-      <h3 className="section-heading-b mb-10 text-white">Reviews</h3>
+      <h3 className="section-heading-b mb-10 text-white">Обратная связь</h3>
 
       <Swiper
   spaceBetween={20}

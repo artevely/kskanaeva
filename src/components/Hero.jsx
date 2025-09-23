@@ -25,6 +25,12 @@ export default function Hero() {
         <source src="/kskanaeva/hero-sm.mp4" type="video/mp4" />
       </video>
 
+      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <h2 className="section-heading-b text-center opacity-50">
+          Ваша любовь моими глазами
+        </h2>
+      </div>
+
       {/* Overlay */}
     </section>
   );
