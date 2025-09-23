@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 export default function Price({ openModal }) {
   const priceItems = [
     { title: "Несвадьбы", price: "*" },
-    { title: "Банкет", price: "17000 ₽/день" },
-    { title: "Полный день", price: "22000 ₽/день" }
+    { title: "Банкет", price: "17000 ₽" },
+    { title: "Полный день", price: "22000 ₽" }
   ];
 
   return (
     <section id="price" className="py-20 bg-gray-950 text-center">
       <h3 className="section-heading-b mb-10 text-white">
-        Стоимость работы
+        Стоимость работ
       </h3>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto px-6 section-subtitle">

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuItems = [
-  { id: "home", label: "Домой" },
+  { id: "home", label: "" },
   { id: "about", label: "Обо мне" },
   { id: "price", label: "Стоимость работ" },
   { id: "portfolio", label: "Портфолио" },
   { id: "reviews", label: "Обратная связь" },
-  { id: "contacts", label: "Соц сети" },
+  { id: "contacts", label: "" },
 ];
 
 export default function Header() {
