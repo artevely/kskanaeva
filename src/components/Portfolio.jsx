@@ -27,7 +27,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-10 bg-black text-center relative z-1">
       <h3 className="section-heading-b mb-10 text-white">
-  Портфолио
+  Portfolio
 </h3>
 
       {/* Сетка видео */}

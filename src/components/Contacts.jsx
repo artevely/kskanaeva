@@ -9,16 +9,16 @@ export default function Contacts() {
           href="https://t.me/kskanaeva"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-3 hover:text-gray-300 transition italic"
+          className="section-subtitle flex items-center gap-3 hover:text-gray-300 transition italic"
         >
           <FaTelegramPlane size={24} />
           tg: kskanaeva
         </a>
-        <a
+        <a 
           href="https://www.instagram.com/kskanaeva/"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-3 hover:text-gray-300 transition italic"
+          className="section-subtitle flex items-center gap-3 hover:text-gray-300 transition italic"
         >
           <FaInstagram size={24} />
           inst: kskanaeva

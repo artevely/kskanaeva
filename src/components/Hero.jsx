@@ -3,20 +3,29 @@ import React from "react";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full" id="home">
+      {/* Видео для десктопа */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover hidden md:block"
+      >
+        <source src="/kskanaeva/hero-sm.mp4" type="video/mp4" />
+      </video>
+
+      {/* Видео для мобилок */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover block md:hidden"
       >
         <source src="/kskanaeva/hero.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-        <h2 className="section-heading-b text-center opacity-50">
-  Capturing Cinematic Moments
-</h2>
-      </div>
+
+      {/* Overlay */}
     </section>
   );
 }

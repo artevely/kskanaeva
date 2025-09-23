@@ -13,7 +13,7 @@ export default function About() {
       />
 <div className="relative z-10 max-w-2xl p-6 opacity-70">
   <h3 className="section-heading-b mb-4 text-white">
-  обо мне
+  About
 </h3>
 
   <p className="section-subtitle \text-lg leading-relaxed">

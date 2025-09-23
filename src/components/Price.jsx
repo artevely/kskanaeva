@@ -5,7 +5,7 @@ export default function Price({ openModal }) {
   return (
     <section id="price" className="py-20 bg-gray-950 text-center">
       <h3 className="section-heading-b mb-10 text-white">
-  Прайс
+  Price
 </h3>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto px-6">
