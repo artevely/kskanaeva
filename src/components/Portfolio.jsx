@@ -50,7 +50,6 @@ export default function Portfolio() {
   rel="noopener noreferrer"
   className="section-subtitle mt-8 inline-flex items-center justify-center gap-3 text-white hover:text-yellow-400 transition-colors"
 >
-  <FaTelegramPlane className="text-2xl" />
   Еще больше работ в моем канале (жми)
 </a>
 
