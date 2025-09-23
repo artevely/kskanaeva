@@ -7,7 +7,7 @@ export default function About() {
       className="relative min-h-screen flex items-center justify-center text-center bg-black"
     >
       <img
-        src="/about-bg-4.jpg"
+        src="/kskanaeva/about-bg-4.jpg"
         alt="About background"
         className="absolute inset-0 w-full h-full object-cover opacity-40"
       />
