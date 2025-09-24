@@ -5,10 +5,12 @@ export default function Hero() {
     <section className="relative h-screen w-full" id="home">
       {/* Видео для десктопа */}
       <video
+        preload="auto"
         autoPlay
         muted
         loop
         playsInline
+        poster="/kskanaeva/hero-poster.jpg" 
         className="absolute inset-0 w-full h-full object-cover hidden md:block"
       >
         <source src="/kskanaeva/hero.mp4" type="video/mp4" />
@@ -16,10 +18,12 @@ export default function Hero() {
 
       {/* Видео для мобилок */}
       <video
+        preload="auto"
         autoPlay
         muted
         loop
         playsInline
+        poster="/kskanaeva/hero-sm-poster.jpg" 
         className="absolute inset-0 w-full h-full object-cover block md:hidden"
       >
         <source src="/kskanaeva/hero-sm.mp4" type="video/mp4" />
