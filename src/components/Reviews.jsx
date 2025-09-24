@@ -7,13 +7,13 @@ export default function Reviews() {
   const [selectedReview, setSelectedReview] = useState(null);
 
   const reviews = [
-    "/kskanaeva/reviews/review1.png",
-    "/kskanaeva/reviews/review2.png",
-    "/kskanaeva/reviews/review3.png",
-    "/kskanaeva/reviews/review4.png",
-    "/kskanaeva/reviews/review5.png",
-    "/kskanaeva/reviews/review6.png",
-    "/kskanaeva/reviews/review7.png",
+    "/reviews/review1.png",
+    "/reviews/review2.png",
+    "/reviews/review3.png",
+    "/reviews/review4.png",
+    "/reviews/review5.png",
+    "/reviews/review6.png",
+    "/reviews/review7.png",
   ];
 
   // блокировка скролла при открытом отзыве

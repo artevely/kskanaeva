@@ -10,10 +10,10 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="/kskanaeva/hero-poster.jpg" 
+        poster="/hero-poster.jpg" 
         className="absolute inset-0 w-full h-full object-cover hidden md:block"
       >
-        <source src="/kskanaeva/hero.mp4" type="video/mp4" />
+        <source src="/hero.mp4" type="video/mp4" />
       </video>
 
       {/* Видео для мобилок */}
@@ -23,10 +23,10 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="/kskanaeva/hero-sm-poster.jpg" 
+        poster="/hero-sm-poster.jpg" 
         className="absolute inset-0 w-full h-full object-cover block md:hidden"
       >
-        <source src="/kskanaeva/hero-sm.mp4" type="video/mp4" />
+        <source src="/hero-sm.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
