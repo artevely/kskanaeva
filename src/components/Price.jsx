@@ -5,30 +5,27 @@ export default function Price({ openModal }) {
   const priceItems = [
     { title: "Несвадьбы", price: "*" },
     { title: "Банкет", price: "17000 ₽" },
-    { title: "Полный день", price: "22000 ₽" }
+    { title: "Полный день", price: "22000 ₽" },
   ];
 
   return (
-    <section id="price" className="py-20 bg-gray-950 text-center">
-      <h3 className="section-heading-b mb-10 text-white">
-        Стоимость работ
-      </h3>
+    <section id="price" className="py-20" style={{ background: "var(--bg-main)" }}>
+      <h3 className="section-heading-b mb-10">Стоимость работ</h3>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto px-6 section-subtitle">
+      <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto px-6">
         {priceItems.map(({ title, price }) => (
           <motion.div
             key={title}
-            whileHover={{ scale: 1.05 }}
-            className="bg-white/10 p-8 rounded-2xl cursor-pointer relative"
+            whileHover={{ scale: 1.03 }}
+            className="card p-8 cursor-pointer"
             onClick={() => openModal(title)}
           >
-            <h4 className="mb-2 text-white">{title}</h4>
-            <p className="text-gray-300 mt-2">{price}</p>
-            <p className="text-sm text-gray-300 mt-1">Подробнее</p>
+            <h4 className="text-xl font-semibold text-black">{title}</h4>
+            <p className="text-[var(--text-muted)] mt-2">{price}</p>
+            <p className="text-sm text-[var(--accent)] mt-1">Подробнее</p>
           </motion.div>
         ))}
       </div>
     </section>
   );
 }
-

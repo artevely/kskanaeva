@@ -13,16 +13,17 @@ export default function App() {
   const [modal, setModal] = useState(null);
 
   return (
-    <div className="font-sans text-white bg-black select-none">
+    <div className="font-sans text-black bg-[var(--bg-main)]">
       <Header />
-      <Hero />
-      <About />
-      <Price openModal={setModal} />
-      <Portfolio />
-      <Reviews />
-      <Contacts />
+      <main>
+        <Hero />
+        <About />
+        <Price openModal={setModal} />
+        <Portfolio />
+        <Reviews />
+        <Contacts />
+      </main>
 
-      {/* Модалка */}
       <AnimatePresence>
         {modal && <Modal modal={modal} closeModal={() => setModal(null)} />}
       </AnimatePresence>

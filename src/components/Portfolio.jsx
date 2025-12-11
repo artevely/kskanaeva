@@ -8,33 +8,26 @@ export default function Portfolio() {
     { id: 1, title: "Видео #1", src: "/portfolio1.mp4", poster: "/poster1.png" },
     { id: 2, title: "Видео #2", src: "/portfolio2.mp4", poster: "/poster2.png" },
     { id: 3, title: "Видео #3", src: "/portfolio3.mp4", poster: "/poster3.png" },
-    { id: 4, title: "Видео #4", src: "/portfolio4.mp4", poster: "/poster4.png" }
+    { id: 4, title: "Видео #4", src: "/portfolio4.mp4", poster: "/poster4.png" },
+    { id: 4, title: "Видео #5", src: "/portfolio5.mp4", poster: "/poster5.png" },
+    { id: 4, title: "Видео #6", src: "/portfolio6.mp4", poster: "/poster6.png" },
+    { id: 4, title: "Видео #7", src: "/portfolio7.mp4", poster: "/poster7.png" },
+    { id: 4, title: "Видео #8", src: "/portfolio8.mp4", poster: "/poster8.png" },
   ];
 
   useEffect(() => {
-    if (selectedVideo) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
+    document.body.style.overflow = selectedVideo ? "hidden" : "";
   }, [selectedVideo]);
 
   return (
-    <section id="portfolio" className="py-10 bg-black text-center relative z-1">
-      <h3 className="section-heading-b mb-10 text-white">
-  Портфолио
-</h3>
+    <section id="portfolio" className="py-10" style={{ background: "var(--bg-main)" }}>
+      <h3 className="section-heading-b mb-10">Портфолио</h3>
 
-      {/* Сетка видео */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto px-6">
         {videos.map((video) => (
           <div
             key={video.id}
-            className="bg-white/10 h-32 md:h-64 flex items-center justify-center rounded-xl cursor-pointer overflow-hidden shadow-lg hover:scale-105 transition-transform"
+            className="card h-32 md:h-64 flex items-center justify-center rounded-xl overflow-hidden cursor-pointer"
             onClick={() => setSelectedVideo(video)}
           >
             <img src={video.poster} alt={video.title} className="w-full h-full object-cover" />
@@ -42,34 +35,27 @@ export default function Portfolio() {
         ))}
       </div>
 
-      {/* Ссылка на канал Telegram */}
-      <a
-  href="https://t.me/kanaevavideo"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="section-subtitle mt-8 inline-flex items-center justify-center gap-3 p-4 text-white hover:text-yellow-400 transition-colors"
->
-  Еще больше работ в канале (жми)
-</a>
+      <div className="flex justify-center mt-8 mb-0 md:mb-4">
+        <a
+          href="https://t.me/kanaevavideo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-lg md:text-2xl text-black hover:text-[var(--accent)] transition"
+        >
+          Еще больше работ в канале (жми)
+        </a>
+      </div>
 
-      {/* Lightbox */}
       <AnimatePresence>
         {selectedVideo && (
           <motion.div
-            className="fixed inset-0 z-[90] flex items-center justify-center p-4"
+            className="fixed inset-0 z-[90] flex items-center justify-center p-4 lightbox-bg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedVideo(null)}
           >
-            {/* Затемнённый фон */}
-            <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
-
-            {/* Видео поверх */}
-            <div
-              className="relative z-[100]"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="relative z-[100]" onClick={(e) => e.stopPropagation()}>
               <button
                 className="absolute top-0 right-0 text-white text-3xl p-2 z-[110]"
                 onClick={() => setSelectedVideo(null)}
