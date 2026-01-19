@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export default function Price({ openModal }) {
   const priceItems = [
     { title: "Несвадьбы", price: "*" },
-    { title: "Банкет", price: "17000 ₽" },
-    { title: "Полный день", price: "22000 ₽" },
+    { title: "Банкет", price: "20000 ₽" },
+    { title: "Полный день", price: "25000 ₽" },
   ];
 
   return (
