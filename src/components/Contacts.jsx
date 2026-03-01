@@ -12,7 +12,7 @@ export default function Contacts() {
           className="flex items-center gap-3 text-black hover:text-[var(--accent)] transition"
         >
           <FaTelegramPlane size={24} />
-          tg: kskanaeva
+          тг: @kskanaeva
         </a>
 
         <a
@@ -22,7 +22,7 @@ export default function Contacts() {
           className="flex items-center gap-3 text-black hover:text-[var(--accent)] transition"
         >
           <FaInstagram size={24} />
-          inst: kskanaeva
+          инст: kskanaeva
         </a>
       </div>
     </section>
