@@ -26,7 +26,7 @@ export default function Header() {
             className="section-heading cursor-pointer text-black"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            Ksenia Kanaeva
+            Ксения Канаева
           </h1>
 
           <nav className="hidden lg:flex space-x-6 text-black text-base">

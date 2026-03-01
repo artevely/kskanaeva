@@ -29,7 +29,8 @@ export default function Modal({ modal, closeModal }) {
           {modal}
         </h4>
 
-        {modal === "Несвадьбы" && <p className="text-lg">• Любые виды сьемок 
+        {modal === "Несвадьбы" && <p className="text-lg">
+              • Любые виды сьемок 
         <br />• Контент для бизнеса
         <br />• Индивидуальная съемка
         <br />• Семейная съемка
