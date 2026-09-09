@@ -54,7 +54,6 @@ export default function Modal({ modal, closeModal }) {
             • Танец с отцом<br />
             • Все исходники
             <br /><br />
-            * Фильм на 5-10 минут + 6000 руб 
           </p>
         )}
       </motion.div>
